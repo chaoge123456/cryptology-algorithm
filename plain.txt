@@ -1,0 +1,29 @@
+Nowadays, huge amount of data is created and distributed from
+different resources [1, 2]. With reduction in cost of storing
+information and existing infrastructures such as cloud computing
+and grid computing, there is the opportunity to extract knowledge
+from them. Besides the security problems in data mining
+techniques, new security challenges have emerged in big data
+mining, which are related to the necessity of using distributed
+computing for big data analysis [3]. So, privacy concerns are
+aggravated because distributed information can be recovered easily
+rather than aggregated form. Association rule mining is one of the
+most important data mining techniques. However, misuse of this
+technique may lead to the disclosure of sensitive information about
+users [4, 5]. Many researches have been done in association rule
+hiding [6¨C10] and most of them present algorithms that delete
+items from transactions for hiding sensitive rules. Unfortunately,
+undesired side effect is obvious in these algorithms. To solve this
+problem, researchers try to use greedy-based approaches. However,
+these approaches cannot guarantee finding an optimal solution and
+only try to increase their efficiency. In this research, in order to
+hide sensitive association rules in big data mining, instead of
+removing repeated instance of sensitive association rules,
+anonymisation methods are used to hide sensitive rules. By doing
+this, besides hiding sensitive information, undesired side effect of
+deleting frequent item-sets (ISs) on new entrance data, would be
+removed. To make this approach suitable for big data analysing,
+parallelisation and scalability features are considered, too.
+Sensitive degree of each association rule is determined using
+appropriate membership functions and anonymisation would be
+done based on it.
