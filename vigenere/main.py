@@ -3,6 +3,7 @@
 import msvcrt,sys
 from encryption import encrypt
 from decryption import decrypt
+from crack import crack_key
 import getpass
 
 if __name__ == "__main__":
@@ -13,7 +14,7 @@ if __name__ == "__main__":
     print("**************************************************************************")
     flag = True
     while flag:
-        print("\n请选择您要进行的操作：1.加密(按E键) 2.解密(按D键） 3.退出(任意键)\n")
+        print("\n请选择您要进行的操作：1.加密(按E键) 2.解密(按D键） 3.破解密钥(按C键) 4.退出(任意键)\n")
         u = input("您选择的操作是：")
         if u == "E":
             print("(温馨提示：进行加密前请清空plain.txt文件中的内容，并将明文复制到该文件中)")
@@ -25,6 +26,9 @@ if __name__ == "__main__":
             key = getpass.getpass("请输入解密密钥:")
             decrypt(key)
             print("解密完成，请到result.txt文件中查看明文")
+        elif u == "C":
+            print("(温馨提示：进行破解前请清空crypt.txt文件中的内容，并将密文复制到该文件中)")
+            crack_key()
         else:
             flag = False
 
